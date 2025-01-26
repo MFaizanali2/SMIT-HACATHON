@@ -1,4 +1,3 @@
-            <Link to="profile">Profile</Link>
 
 
 import * as React from "react";
@@ -25,7 +24,10 @@ import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
+
 const Dashboard = () => {
+
+    
   const drawerWidth = 240;
 
   const openedMixin = (theme) => ({

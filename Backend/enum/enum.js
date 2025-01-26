@@ -1,0 +1,8 @@
+export const enums = {
+    ERRORS:"Something went wrong",
+    SUCCESS:"HIT SUCCESSFULLY",
+    ADD:"ADD DATA SUCCESSFULLY",
+    DELETE:"DELETED SUCCESSFULLY",
+    UPDATE:"UPDATED SUCCESSFULLY",
+
+}

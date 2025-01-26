@@ -1,11 +1,20 @@
 import React from 'react'
-import LoanCalculator from './components/LoanCalculator/LoanCalculator'
+import { Route, Routes } from 'react-router-dom'
+import { router } from './router'
+import{ Toaster } from 'react-hot-toast';
+import DashboardLayoutBranding from './components/dashboardmui';
 
 const App = () => {
   return (
-    <div>
-      <LoanCalculator />
-    </div>
+   <>
+    <Toaster/>
+    <Routes>
+      {router.map((item, index) => {
+        return (<Route key={index} path={item?.path} element={item?.component} />)
+      })}
+    </Routes>
+
+   </>
   )
 }
 

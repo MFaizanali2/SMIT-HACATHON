@@ -6,11 +6,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { store } from './store/store.js'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter >
+  <BrowserRouter>
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}> */}
-        <App />
-      {/* </PersistGate> */}
+      <App />
     </Provider>
   </BrowserRouter>,
 )
